@@ -9,10 +9,10 @@
 #include "globals.h"
 
 // Linker error: redefined variable (globalDiscount is already defined in globals.h)
-double globalDiscount = 5.0;
+//double globalDiscount = 5.0;
 
 // Linker error: external function declared but not defined anywhere
-void externalPromotion();
+//void externalPromotion();
 
 // Computes the total bill by adding tip and subtracting a discount.
 double computeTotal(double bill, int people, double tipPercentage){
@@ -77,7 +77,7 @@ int main(){
     std::cout << "Bonus offer: " << bonus << std::endl;
     
     // Linker error: Call to an external function that is declared but not defined.
-    externalPromotion();
+    //externalPromotion();
     
     std::cout << std::endl << std::endl;
     
